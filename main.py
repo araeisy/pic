@@ -16,7 +16,7 @@ botusername = 'CloudDownloaderBot'
 @bot.message_handler(commands=['start'])
 def welcome(m):
     cid = m.chat.id
-    b = types.InlineKeyboardButton("Our Channel",callback_data='channel')
+    b = InlineKeyboardButton("Our Channel",callback_data='channel')
     markup.add(b)
     redis = r.StrictRedis(host='localhost', port=6379, db=0)
     redis.sadd('start','{}'.format(m.from_user.id))
