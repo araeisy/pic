@@ -18,6 +18,12 @@ bot = telebot.TeleBot('213469836:AAFqp1scCFDfmS6sqFRshAID8Fup_cicdcU')
 admin = 195801672
 botusername = 'CloudDownloaderBot'
 
+@bot.message_handler(commands=['start'])
+def welcome(m):
+    cid = m.chat.id
+       markup = types.InlineKeyboardMarkup()
+    a = types.InlineKeyboardButton("\xDA\xA9\xD8\xA7\xD9\x86\xD8\xA7\xD9\x84\x20\xD9\x85\xD8\xA7\x20\xF0\x9F\x93\xA2", url="https://telegram.me/TeleAgent_Team")
+    markup.add(a)
 @bot.message_handler(func=lambda m: m.text)
 def n(m):
     text = m.text
@@ -25,9 +31,6 @@ def n(m):
     print 'Text : \033[32m{}\nID : \033[31m{}'.format(text,id)
     if re.match('^/(id|who)$',text):
         bot.send_message(m.chat.id, m.from_user.id)
-    markup = types.InlineKeyboardMarkup()
-    a = types.InlineKeyboardButton("\xDA\xA9\xD8\xA7\xD9\x86\xD8\xA7\xD9\x84\x20\xD9\x85\xD8\xA7\x20\xF0\x9F\x93\xA2", url="https://telegram.me/TeleAgent_Team")
-    markup.add(a)
     if re.match('^/(help|start)$',text):
         bot.send_message(m.chat.id, """
 1> /id
