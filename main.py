@@ -23,7 +23,7 @@ def welcome(m):
     cid = m.chat.id
     markup = types.InlineKeyboardMarkup()
     a = types.InlineKeyboardButton("\xF0\x9F\x87\xA9\xF0\x9F\x87\xAA\x20\xD8\xB3\xD8\xA7\xD8\xB2\xD9\x86\xD8\xAF\xD9\x87\x20\xD8\xB1\xD8\xA8\xD8\xA7\xD8\xAA\x20\xF0\x9F\x87\xAE\xF0\x9F\x87\xB7", url="https://telegram.me/XHACKERX")
-    c = types.InlineKeyboardButton("\xDA\xA9\xD8\xA7\xD9\x86\xD8\xA7\xD9\x84\x20\xD9\x85\xD8\xA7\x20\xF0\x9F\x93\xA2", url="https://telegram.me/TeleAgent_TEAM)
+    c = types.InlineKeyboardButton("Channel", url="https://telegram.me/TeleAgent_TEAM)
     markup.add(a, c)
     b = types.InlineKeyboardButton("Cloud Downloader",callback_data='about')
     markup.add(b)
