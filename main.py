@@ -8,7 +8,6 @@ import sys
 import os
 from telebot import types
 import json
-import config
 import random
 import requests as req
 #import color
