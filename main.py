@@ -8,6 +8,8 @@ import sys
 import os
 from telebot import types
 import json
+import urllib
+import urllib2
 import random
 import requests as req
 #import color
