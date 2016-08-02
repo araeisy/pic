@@ -6,11 +6,8 @@ import re
 from urllib import urlretrieve as dw
 import sys
 import os
-import text
 from telebot import types
 import json
-import urllib
-import urllib2
 import random
 import requests as req
 #import color
