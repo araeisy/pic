@@ -6,6 +6,7 @@ import re
 from urllib import urlretrieve as dw
 import sys
 import os
+import text
 from telebot import types
 import json
 import urllib
