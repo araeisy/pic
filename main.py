@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import telebot
+from telebot import types
 import re
 from urllib import urlretrieve as dw
 import sys
