@@ -6,6 +6,11 @@ import re
 from urllib import urlretrieve as dw
 import sys
 import os
+from telebot import types
+import json
+import config
+import random
+import requests as req
 #import color
 reload(sys)
 sys.setdefaultencoding("utf-8")
